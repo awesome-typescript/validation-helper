@@ -17,7 +17,7 @@ export const isJson = (value: JSONValue | string): boolean => {
   return false
 }
 
-export const isJsonReference = (value: JSONValue): boolean => {
+export const isJsonReference = (value: JSONValue): value is JSONValue => {
   try {
     const jsonString = JSON.stringify(value)
 
