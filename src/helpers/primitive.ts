@@ -1,4 +1,4 @@
-import type { Primitive } from '../types/primitive'
+import type { Primitive } from '../types'
 
 export const isPrimitive = (primitive: Primitive): boolean => {
   return (

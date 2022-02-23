@@ -1,4 +1,4 @@
-import type { JSONValue } from '../types/json'
+import type { JSONValue } from '../types'
 
 import { isString } from './primitive'
 import { isArray, isObject } from './reference'
