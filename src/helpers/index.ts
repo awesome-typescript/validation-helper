@@ -1,4 +1,4 @@
-export { isJson } from './json'
+export { isJson, isJsonString, isJsonReference } from './json'
 
 export {
   isString,
