@@ -8,4 +8,6 @@ export {
   isObject,
   isArray,
   isJson,
+  isJsonReference,
+  isJsonString,
 } from './helpers'
