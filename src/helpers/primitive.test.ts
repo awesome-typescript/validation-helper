@@ -33,22 +33,18 @@ describe('primitive', () => {
   })
 
   test('is undefined', () => {
-    // eslint-disable-next-line unicorn/no-useless-undefined
     expect(isUndefined(undefined)).toBe(true)
   })
 
   test('is not undefined', () => {
-    // eslint-disable-next-line unicorn/no-null
     expect(isUndefined(null)).toBe(false)
   })
 
   test('is null', () => {
-    // eslint-disable-next-line unicorn/no-null
     expect(isNull(null)).toBe(true)
   })
 
   test('is not null', () => {
-    // eslint-disable-next-line unicorn/no-useless-undefined
     expect(isNull(undefined)).toBe(false)
   })
 
@@ -56,9 +52,7 @@ describe('primitive', () => {
     expect(isPrimitive(1)).toBe(true)
     expect(isPrimitive('1')).toBe(true)
     expect(isPrimitive(true)).toBe(true)
-    // eslint-disable-next-line unicorn/no-null
     expect(isPrimitive(null)).toBe(true)
-    // eslint-disable-next-line unicorn/no-useless-undefined
     expect(isPrimitive(undefined)).toBe(true)
   })
 

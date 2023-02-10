@@ -66,7 +66,6 @@ describe('json', () => {
             },
           },
           type: 'Feature',
-          // eslint-disable-next-line unicorn/no-null
           geometry: null,
           properties: {
             NIA_Focu00: 'Netherley Brook and Ditton Brook Corridor',
@@ -91,7 +90,6 @@ describe('json', () => {
             'filter': ['==', '$type', 'Polygon'],
           },
           type: 'Feature',
-          // eslint-disable-next-line unicorn/no-null
           geometry: null,
           properties: {
             AREA_HA: 8618.7,
