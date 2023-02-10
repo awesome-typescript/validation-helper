@@ -3,7 +3,8 @@ import type { JSONValue } from '../types'
 import { isString } from './primitive'
 import { isArray, isObject } from './reference'
 
-const rx_json_pattern = /[\d A-Za-z-]*"(?=:):[\d "-ć]*(?<=")|"[\d A-Za-z-]*"(?=:):[\d "-ć]*(?=,)|"[\d A-Za-z-]*"(?=:):[\d "-ć]*(?=\w+)/
+const rx_json_pattern =
+  /[\d A-Za-z-]*"(?=:):[\d "-ć]*(?<=")|"[\d A-Za-z-]*"(?=:):[\d "-ć]*(?=,)|"[\d A-Za-z-]*"(?=:):[\d "-ć]*(?=\w+)/
 
 export const isJson = (value: JSONValue | string): boolean => {
   return isJsonReference(value) || isString(value) || false
